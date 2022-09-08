@@ -16,7 +16,13 @@ async function main() {
     const horoscopeNFT = await hre.ethers.getContractFactory("horoscopeNFT");
     const hscp = await horoscopeNFT.deploy();
     await hscp.deployed();
+
+    const myAddress = "0x3427bfe887eEc6E1C1e0F2b485800B5A9A7c633F";
     console.log("horoscopeNFT deployed to:", hscp.address);
+
+    const tx = await hscp.mintNFT(myAddress, "Aries");
+
+    await tx.wait();
 }
 
 // We recommend this pattern to be able to use async/await everywhere

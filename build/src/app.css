@@ -1,0 +1,17 @@
+.main {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.mint {
+    margin-top: 1rem;
+}
+
+.base {
+    fill: white;
+    font-family: serif;
+    font-size: 24px;
+}

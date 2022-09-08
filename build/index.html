@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/ethereum/web3.js"></script>
+        <script src="./src/app.js" defer></script>
+        <link rel="stylesheet" href="./src/app.css" />
+        <title>Horoscope</title>
+    </head>
+    <body>
+        <main class="main">
+            <div class="initial-display">
+                <p class="text"></p>
+                <button class="connect">connect</button>
+            </div>
+            <div class="app">
+                <h2>Horoscope NFT Minting Dapp</h2>
+                <p>Connected as: <span class="address"></span></p>
+                <input type="date" value="1970-01-01" /><br />
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMinYMin meet"
+                    viewBox="0 0 300 300"
+                    width="400px"
+                    height="400px"
+                >
+                    <rect width="100%" height="100%" fill="black" />
+                    <text
+                        x="50%"
+                        y="50%"
+                        class="base"
+                        dominant-baseline="middle"
+                        text-anchor="middle"
+                    >
+                        Aries
+                    </text></svg
+                ><br />
+                <button class="mint">Mint</button>
+            </div>
+        </main>
+    </body>
+</html>
